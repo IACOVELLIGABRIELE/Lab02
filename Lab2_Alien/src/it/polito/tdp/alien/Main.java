@@ -1,17 +1,17 @@
 package it.polito.tdp.alien;
-	
+	 
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 
-
+ 
 
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
-		try {
+		try {  
 			
 			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Alien.fxml"));
 			Scene scene = new Scene(root);
@@ -19,7 +19,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 	}
 	
